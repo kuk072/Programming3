@@ -26,6 +26,7 @@ int main()
 
 	Monster monclass;
 	monclass.name = "슬라임"; // c언어에서는 실행이 안되는 문법 -> cpp에 존재하는 특별한 문법으로 가능
+							  // cpp에서는 연산자 기능의 자유지정이 가능하기 때문에 이게 가능함.
 	monclass.HP = 10;
 	monclass.UID = 1;
 
@@ -40,12 +41,12 @@ int main()
 // namespace 키워드를 선언
 // namespace 사용한다. using 키워드 함께
 // 
-// (2)   <<  이건 또 뭐여
+// (2)   <<  이건 또 뭐여 비트연산자
 // (3)   endl what??
 
 
 // c언어와 cpp언어 변경 사항이 무엇이 있는가?
-// 1. 함수 오버로딩
+// 1. 함수 오버로딩(overloading)
 // c언어 : 반환값 이름(...)
 // cpp : 이름 같더라도 인자가 다르면 다른 함수로 인식한다
 // ex) void(int a, int b) /= void(int a, int b, int c)
